@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_25_051748) do
+ActiveRecord::Schema.define(version: 2019_07_25_092703) do
 
   create_table "fuel_types", force: :cascade do |t|
     t.string "fuelname"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_07_25_051748) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
 end
