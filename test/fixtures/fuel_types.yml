@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fuelname: MyString
+  price: 1
+  user: one
+
+two:
+  fuelname: MyString
+  price: 1
+  user: two
