@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_25_092703) do
+ActiveRecord::Schema.define(version: 2019_07_26_121618) do
 
   create_table "fuel_types", force: :cascade do |t|
     t.string "fuelname"
@@ -19,6 +19,16 @@ ActiveRecord::Schema.define(version: 2019_07_25_092703) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_fuel_types_on_user_id"
+  end
+
+  create_table "stocks", force: :cascade do |t|
+    t.string "fueltype"
+    t.integer "liters"
+    t.integer "totalliters"
+    t.integer "User_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["User_id"], name: "index_stocks_on_User_id"
   end
 
   create_table "users", force: :cascade do |t|

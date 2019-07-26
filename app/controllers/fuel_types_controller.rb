@@ -4,7 +4,13 @@ class FuelTypesController < ApplicationController
   # GET /fuel_types
   # GET /fuel_types.json
   def index
-    @fuel_types = FuelType.paginate(page: params[:page], per_page: 6)
+    if not logged_in? 
+      redirect_to root_path
+      
+    else
+       
+      @fuel_types = FuelType.paginate(page: params[:page], per_page: 6)
+    end
   end
 
   # GET /fuel_types/1

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stocks
   resources :fuel_types
   resources :users
 

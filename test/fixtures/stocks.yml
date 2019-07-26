@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fueltype: MyString
+  liters: 1
+  totalliters: 1
+  User: one
+
+two:
+  fueltype: MyString
+  liters: 1
+  totalliters: 1
+  User: two

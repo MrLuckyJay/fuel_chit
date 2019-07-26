@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fueltype:</strong>
+  <%= @stock.fueltype %>
+</p>
+
+<p>
+  <strong>Liters:</strong>
+  <%= @stock.liters %>
+</p>
+
+<p>
+  <strong>Totalliters:</strong>
+  <%= @stock.totalliters %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @stock.User %>
+</p>
+
+<%= link_to 'Edit', edit_stock_path(@stock) %> |
+<%= link_to 'Back', stocks_path %>

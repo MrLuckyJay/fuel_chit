@@ -8,13 +8,10 @@
   </div>
 </div>
 
+<h4 align="center">
+    <%= @user.email %>
+  </h4>
+
 <h4 align="center"><%= @user.username %>'s Consumptions</h4>
   
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>

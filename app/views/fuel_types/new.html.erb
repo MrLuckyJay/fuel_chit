@@ -1,5 +1,9 @@
-<h1>New Fuel Type</h1>
+<div class="container">
+        <h1 align=center style="margin-bottom: 10vh; margin-top:5vh;">New Fuel Type</h1>
 
-<%= render 'form', fuel_type: @fuel_type %>
-
-<%= link_to 'Back', fuel_types_path %>
+        <%= render 'form', fuel_type: @fuel_type %>
+        <div class="col-md-4 offset-md-4" style="margin-top: 5vh;">
+                <%= link_to 'Fuel Types', fuel_types_path, class:'btn btn-secondary btn-block' %>
+        </div>
+        
+</div>
