@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+<h1 align=center>Welcome to <%= @user.username %>'s Page</h1>
+
+<div class="row">
+  <div class="col-md-4 offset-md-4 text-center">
+    <%= gravatar_for @user, size:150 %>
+  </div>
+</div>
+
+<h4 align="center"><%= @user.username %>'s Consumptions</h4>
+  
 
 <p>
   <strong>Email:</strong>

@@ -5,9 +5,11 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+gem 'jquery-rails'
 gem 'bcrypt', '~> 3.1', '>= 3.1.13'
 gem 'rails', '~> 5.2.3'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
+gem 'will_paginate-bootstrap4'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -56,7 +58,8 @@ group :development do
 gem 'sqlite3'
 end
 group :production do
-gem 'postgres', '~> 0.8.1'
+gem 'pg'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
 end
 
