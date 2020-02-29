@@ -12,7 +12,7 @@ gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'will_paginate-bootstrap4'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
